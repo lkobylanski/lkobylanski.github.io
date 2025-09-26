@@ -1,0 +1,11 @@
+title: "Łukasz – CTF Write-ups"
+description: "Moje CTF-y, notatki i rozwiązania"
+theme: jekyll-theme-cayman
+timezone: Europe/Warsaw
+markdown: kramdown
+kramdown:
+  input: GFM
+permalink: /:categories/:year/:month/:day/:title/
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
