@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[picoCTF] string it – write-up"
+title: "[picoCTF] strings it – write-up"
 tags: [ctf, picoCTF, writeup, beginner, forensics, linux]
 ---
 
