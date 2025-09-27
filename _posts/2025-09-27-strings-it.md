@@ -47,7 +47,7 @@ Then I use wget and the link obtained in the previous step to download the file
 Then I check the file type - its executable file named strings - and the challegne name is "strings it" - let's do it!
 ![Screenshot – hint / link](/assets/img/ctf-2025-strings-it/file-strings.png)  
 
-So I'm using strgins command - I know most of you knows exactly what I'mn doing here however I want to break it down a bit for those who are not familiar with Linux and are interested
+So I'm using strgins command - I know most of you knows exactly what I'm doing here however I want to break it down a bit for those who are not familiar with Linux and are interested
 And for myslef to consolidate knowledge. Ok so as mentioned before I'm using strings command, like this: strings strings | less  
 ![Screenshot – hint / link](/assets/img/ctf-2025-strings-it/ls-strings-less.png)  
 (strings command searches a binary file or any other file and prints out strings of readable, printable characters (ASCII/Unicode) that appear in the file. Thanks to this command we don't have to look into the hexadecimals).
