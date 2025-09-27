@@ -17,14 +17,14 @@ The challenge provided a file that supposedly contained the flag in plain sight 
 ---
 
 ## 2. Objective
-Wyodrębnić flagę z dostarczonego pliku.
+Extract the flag from the provided file.
 
 ---
 
 ## 3. Work environment
-- System: najnowsze Kali Linux w VMware.  
-- Narzędzia i konfiguracja: tmux (konfiguracja zapożyczona od mentora).  
-- Praca lokalna w VM, terminal.
+- System: latest Kali Linux in VMware.
+- Tools & configuration: tmux (configuration borrowed from my mentor).
+- Work performed locally in a VM, using the terminal.
 
 ---
 
