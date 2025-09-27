@@ -59,6 +59,7 @@ The pipe (`|`) redirects stdout from the command on the left into stdin for the 
 Inside `less` you can search immediately — from previous CTFs I already know the flag pattern. I searched for `picoCTF` by typing:
 
     /picoCTF
+![Screenshot – hint / link](/assets/img/ctf-2025-strings-it/search-the-text.png)
 
 And there it was — the challenge is completed! :)  
 ![Screenshot – hint / link](/assets/img/ctf-2025-strings-it/less_dislpayed.png)  
