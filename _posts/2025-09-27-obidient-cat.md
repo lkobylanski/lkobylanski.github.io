@@ -50,9 +50,11 @@ or get it from <a href> in DOM.
 I fetched the file to my VM using wget command and obtained URL
 ![Screenshot – hint / link](/assets/img/ctf-2025-obidient-cat/wget.jpg)
 I verified its type (it turned out to be plain ASCII text)
+```html
 <p align="left">
   <img src="/assets/img/ctf-2025-obidient-cat/file-flag.jpg" alt="screenshot 1" style="max-width:100%;height:auto;">
 </p>
+```
 and then inspected its contents using standard Linux cat command (We can see that the name of the challange indicated at very beggining that we will need cat command ;) ). 
 The flag was successfully extracted — redacted on the screen for public sharing.
-![Screenshot – hint / link](/assets/img/ctf-2025-obidient-cat/theFlag.jpg)
+![Screenshot – hint / link](/assets/img/ctf-2025-obidient-cat/getUrlYourself2.jpg)
