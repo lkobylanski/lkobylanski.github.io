@@ -41,7 +41,7 @@ After opening the challenge page, the file containing the flag was available via
 ![Screenshot – hint / link](/assets/img/ctf-2025-obidient-cat/obidient-cat-main-screen.jpg)
 
 Link was available in the 2nd hint.
-![Screenshot – hint / link](/assets/img/ctf-2025-obidient-cat/hint2.jpg)
+![Screenshot – hint / link](/assets/img/ctf-2025-obidient-cat/hint2url.jpg)
 However it was not necessary to get it, we could just click RMB and copy link
 ![Screenshot – hint / link](/assets/img/ctf-2025-obidient-cat/getUrlYourself1.jpg)
 or get it from <a href> in DOM.
@@ -50,10 +50,9 @@ or get it from <a href> in DOM.
 I fetched the file to my VM using wget command and obtained URL
 ![Screenshot – hint / link](/assets/img/ctf-2025-obidient-cat/wget.jpg)
 I verified its type (it turned out to be plain ASCII text)
-![Screenshot – hint / link](/assets/img/ctf-2025-obidient-cat/file-flag.jpg)
+<p align="center">
+  <img src="/assets/img/ctf-2025-obidient-cat/file-flag.jpg" alt="screenshot 1" style="max-width:100%;height:auto;">
+</p>
 and then inspected its contents using standard Linux cat command (We can see that the name of the challange indicated at very beggining that we will need cat command ;) ). 
 The flag was successfully extracted — redacted on the screen for public sharing.
 ![Screenshot – hint / link](/assets/img/ctf-2025-obidient-cat/theFlag.jpg)
-
-```bash
-wget https://example.com/path/to/obedient_cat.txt -O obedient_cat.txt
