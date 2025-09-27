@@ -42,7 +42,7 @@ I use RMB click and obtain the url
 ![Screenshot – hint / link](/assets/img/ctf-2025-strings-it/get-url.png)  
 
 Then I use wget and the link obtained in the previous step to download the file
-![Screenshot – hint / link](assets/img/ctf-2025-strings-it/download-file.png)  
+![Screenshot – hint / link](/assets/img/ctf-2025-strings-it/download-file.png)  
 
 Then I check the file type - its executable file named strings - and the challegne name is "strings it" - let's do it!
 ![Screenshot – hint / link](/assets/img/ctf-2025-strings-it/file-strings.png)  
