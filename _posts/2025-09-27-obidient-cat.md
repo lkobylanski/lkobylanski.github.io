@@ -44,7 +44,7 @@ Link was available in the 2nd hint.
 ![Screenshot – hint / link](/assets/img/ctf-2025-obidient-cat/hint2url.jpg)
 However it was not necessary to get it, we could just click RMB and copy link
 ![Screenshot – hint / link](/assets/img/ctf-2025-obidient-cat/getUrlYourself1.jpg)
-or get it from href in DOM.
+or obtain it from the href in DOM.
 ![Screenshot – hint / link](/assets/img/ctf-2025-obidient-cat/getUrlYourself2.jpg)
 
 I fetched the file to my VM using wget command and obtained URL
