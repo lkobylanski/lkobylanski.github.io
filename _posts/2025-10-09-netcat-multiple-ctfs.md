@@ -11,10 +11,12 @@ Click each title below to expand the details.
 <details> <summary><b>1) what's a net cat</b></summary>
 what's a net cat
 🔍 Description
+ 
 It was warm up before medium level CTF I'm gonna take today.
 To find the flag we will need to use then netact (nc) linux command.
 
 🛠️ What I did
+
 Connected to the host *****:
 <code>nc host.example.com 12345</code>
 
@@ -31,23 +33,23 @@ And the task was completed.
 <details> <summary><b>2) Lets Warm Up</b></summary>
 Lets Warm Up
 🔍 Description
-
-A very basic warm-up challenge — likely reading a file or doing a simple conversion.
+ 
+A very basic warm-up challenge before medium netcat task. Basically we need to convert hexadecimal to ascii.
 
 🛠️ Steps (placeholder)
 
-Downloaded the file:
-<code>wget http://example.com/flag.txt
- -O flag.txt</code>
+We got some information coded in hexadecimal. Its just a string displayed on the challenge page.
+1. I did some quick resarch in the net, and found out that I can use xxd command. 
+2. xxd -r -p takes a sequence of hexadecimal pairs (each pair = one byte) and rebuilds the raw binary data from them.
+3. I just echoed the hexadecimal value from the challenge and used pipe to xxd -r -p and there we got an ascii value correspnding to the hexadecimal.
 
-Displayed the contents:
-<code>cat flag.txt</code>
+📸 Screenshot  
+<img src="../assets/img/ctf-2025-warm-up/1.png" width="600">
+🏁 Flag  
+<code>picoCTF{PLACEHOLDER_LETS_WARM_UP}</code>  
 
-📸 Screenshot
-<img src="../assets/img/ctf/lets-warm-up.png" alt="lets warm up screenshot" width="600">
-🏁 Flag
-
-<code>picoCTF{PLACEHOLDER_LETS_WARM_UP}</code>
+And we got the 2nd flag:  
+<img src="../assets/img/ctf-2025-warm-up/2.png" width="600">
 
 </details>
 <details> <summary><b>3) Nice netcat (medium)</b></summary>
