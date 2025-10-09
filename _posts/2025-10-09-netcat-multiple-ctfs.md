@@ -70,7 +70,7 @@ A medium-level challenge involving netcat and ASCII conversion — we receive a 
 2. I saw that the output are numbers in decimal separated by break lines '\n' and wihte spaces.
 3. I saved the output into the file.  
 <img src="../assets/img/ctf-2025-nice-netcat/1.png" width="600">  
-4. I removed '\n' separators and I could see numbers separated with white spaces  
+4. I removed '\n' separators and I could see numbers separated with white spaces
 5. Aaand here I made a mistake: I removed the white spaces
 6. I've opened file with numbers without any spaces.  
 <img src="../assets/img/ctf-2025-nice-netcat/2.png" width="600">  
