@@ -1,0 +1,86 @@
+layout: post
+title: "CTF Pack — 3x PicoCTF (dwa quicky + jeden medium)"
+date: 2025-10-09
+categories: [CTF, picoCTF, writeups]
+tags: [picoctf, writeup, netcat, forensics, beginner, medium]
+🧩 PicoCTF Pack — 3 wyzwania (1 medium + 2 quicky)
+
+Krótki post z trzema zadaniami z picoCTF wykonanymi dziś — dwa szybkie „one-shoty” i jedno średnie.
+Kliknij tytuł każdego zadania, aby rozwinąć szczegóły.
+
+<details> <summary><b>1) what's a net cat</b></summary>
+what's a net cat
+🔍 Opis (skrót)
+
+Krótka notka opisująca czym jest netcat/połączenie — placeholder.
+
+🛠️ Co zrobiłem
+
+Połączyłem się z hostem (placeholder):
+<code>nc host.example.com 12345</code>
+
+Otrzymałem prosty tekst / prompt / plik.
+
+📸 Zrzut ekranu
+<img src="../assets/img/ctf/what-net-cat.png" alt="what's a net cat screenshot" width="600">
+🏁 Flaga
+
+<code>picoCTF{PLACEHOLDER_WHATS_A_NET_CAT}</code>
+
+</details>
+<details> <summary><b>2) Lets Warm Up</b></summary>
+Lets Warm Up
+🔍 Opis (skrót)
+
+Proste wyzwanie na rozgrzewkę — odczytanie pliku lub prosta konwersja.
+
+🛠️ Przykładowe kroki (placeholder)
+
+Pobranie pliku:
+<code>wget http://example.com/flag.txt
+ -O flag.txt</code>
+
+Szybki podgląd:
+<code>cat flag.txt</code>
+
+📸 Zrzut ekranu
+<img src="../assets/img/ctf/lets-warm-up.png" alt="lets warm up screenshot" width="600">
+🏁 Flaga
+
+<code>picoCTF{PLACEHOLDER_LETS_WARM_UP}</code>
+
+</details>
+<details> <summary><b>3) Nice netcat (medium)</b></summary>
+Nice netcat — (medium)
+🔍 Opis
+
+Zadanie średniego poziomu związane z netcat i konwersją danych — otrzymujemy strumień liczb (oddzielonych spacjami) które trzeba zamienić na ASCII.
+
+🛠️ Kroki rozwiązania
+
+Połączyłem się z serwerem:
+<code>nc mercury.picoctf.net 35652</code>
+
+Zrzuciłem output do pliku:
+<code>nc mercury.picoctf.net 35652 > nice_netcat_spaces_flag.txt</code>
+
+Plik zawierał listę liczb rozdzielonych spacjami — zamieniłem każdą liczbę na znak ASCII:
+<code>awk '{ for(i=1;i<=NF;i++) printf "%c", $i; print "" }' nice_netcat_spaces_flag.txt > decoded.txt</code>
+Alternatywnie (jeśli liczby w systemie dziesiętnym):
+<code>tr ' ' '\n' < nice_netcat_spaces_flag.txt | while read num; do printf "\x$(printf %x $num)"; done ; echo</code>
+
+Odczytałem decoded.txt i uzyskałem flagę.
+
+📸 Zrzuty ekranu
+<img src="../assets/img/ctf/nice-netcat-1.png" alt="nice netcat step 1" width="600"> <img src="../assets/img/ctf/nice-netcat-2.png" alt="nice netcat step 2" width="600">
+🏁 Flaga
+
+<code>picoCTF{PLACEHOLDER_NICE_NETCAT}</code>
+
+🔁 Lekcje / notatki
+
+AWK jest super szybkie do iteracji po polach i konwersji na znaki.
+
+Zwróć uwagę na format liczb (dziesiętne / heks / oktal) — odpowiednio trzeba dobrać konwersję.
+
+</details>
