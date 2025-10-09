@@ -90,11 +90,12 @@ A medium-level challenge involving netcat and ASCII conversion — we receive a 
 
 10. I opened the decoded file and here it is — the flag:
 
-<img src="../assets/img/ctf-2025-nice-netcat/3.png" width="600" alt="decoded flag">
+<img src="../assets/img/ctf-2025-nice-netcat/3.jpg" width="600" alt="decoded flag">
 
 Next challenge completed:
 
 <img src="../assets/img/ctf-2025-nice-netcat/4.png" width="600" alt="next challenge">
+
 
 I think its worth to give some explenation regarding awk and the loop I used:
 I converted a stream of space-separated decimal byte values into readable ASCII using awk (AWK is a lightweight text-processing language commonly used in Unix systems.
