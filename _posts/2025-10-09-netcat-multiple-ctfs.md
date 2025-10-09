@@ -65,23 +65,36 @@ A medium-level challenge involving netcat and ASCII conversion — we receive a 
 
 🛠️ Steps to solve
 
-1. Using nc (netcat) command - I connected to the server:
+1. Using nc (netcat) command - I connected to the server:  
 <code>nc mercury.picoctf.net 35652</code>
-2. I saw that the output are numbers in decimal separated by break lines '\n' and wihte spaces.
-3. I saved the output into the file.  
-<img src="../assets/img/ctf-2025-nice-netcat/1.png" width="600">  
-4. I removed '\n' separators and I could see numbers separated with white spaces
-5. Aaand here I made a mistake: I removed the white spaces
-6. I've opened file with numbers without any spaces.  
-<img src="../assets/img/ctf-2025-nice-netcat/2.png" width="600">  
-7. At this point I understood my mistake - the numbers were separated for the reason, each individual number correspond to symbol in ASCII
-8. I can't use xxd command which translates hexadecimal to ASCII, I need to ask google :D and it seems awk is the answer
-9. I converted a stream of space-separated decimal byte values into readable ASCII using awk and simple loop which to decode decimals to ASCII and save output to new file
-10. I open new decoded file with cat command and here it is, the flag:  
-<img src="../assets/img/ctf-2025-nice-netcat/3.png" width="600">  
 
-Next challange completed:  
-<img src="../assets/img/ctf-2025-nice-netcat/4.png" width="600">  
+2. I saw that the output are numbers in decimal separated by break lines '\n' and white spaces.
+
+3. I saved the output into the file.
+
+<img src="../assets/img/ctf-2025-nice-netcat/1.png" width="600" alt="saving output">
+
+4. I removed '\n' separators and I could see numbers separated with white spaces.
+
+5. Aaand here I made a mistake: I removed the white spaces.
+
+6. I've opened file with numbers without any spaces.
+
+<img src="../assets/img/ctf-2025-nice-netcat/2.png" width="600" alt="numbers without spaces">
+
+7. At this point I understood my mistake - the numbers were separated for a reason: each number corresponds to an ASCII symbol.
+
+8. I couldn't use `xxd` (it converts hex), so I searched and found `awk`.
+
+9. I converted the stream of space-separated decimal bytes into ASCII using AWK and saved the output.
+
+10. I opened the decoded file and here it is — the flag:
+
+<img src="../assets/img/ctf-2025-nice-netcat/3.png" width="600" alt="decoded flag">
+
+Next challenge completed:
+
+<img src="../assets/img/ctf-2025-nice-netcat/4.png" width="600" alt="next challenge">
 
 I think its worth to give some explenation regarding awk and the loop I used:
 I converted a stream of space-separated decimal byte values into readable ASCII using awk (AWK is a lightweight text-processing language commonly used in Unix systems.
