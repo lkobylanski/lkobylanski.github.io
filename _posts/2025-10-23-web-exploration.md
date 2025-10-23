@@ -141,7 +141,7 @@ We will search throrugh the page, to find parts of the flag.
 
 7. Here I stucked for a moment, had no really idea where to search only hint was that its apache. After about ~1hr of tries and doing some resarch I found that: .htaccess is a configuration file used by Apache-based web servers and it worked - I replaced /robots.txt at the end of the URL with /.htaccess and I found it 4th part of the flag with another hint
    
-<img src="../assets/img/ctf-2025-web-exploration/Scavenger_Hunt/1.png" width="600">  
+<img src="../assets/img/ctf-2025-web-exploration/Scavenger_Hunt/4.png" width="600">  
 
 9. And another resarch, after some time I found that DS_Store is a file that stores custom attributes of its containing folder, such as folder view options, icon positions - It took me a while to find out, but there is final part!
 
