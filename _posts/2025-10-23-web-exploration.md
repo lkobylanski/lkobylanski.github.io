@@ -47,10 +47,13 @@ Pretty simple challenge. As the name indicates we will be checking robots.txt fi
 
 🛠️ Steps
 
-1. I open an URL given in the task, and I add at the end of it /robots.txt 
-(<i>a text file that website owners create to tell web crawlers (like search engine bots) which pages or directories on their site should not be crawled</i>)  
+1. I open an URL given in the task, and I add at the end of it /robots.txt  
+(<i>a text file that website owners create to tell web crawlers (like search engine bots) which pages or directories on their site should not be crawled</i>)
+
 <img src="../assets/img/ctf-2025-web-exploration/where_are_the_robots/1.png" width="600">  
-2. In the robot.txt we can see disallow file.html. I puit it at the end of the URL and there is the flag!  
+
+3. In the robot.txt we can see disallow file.html. I puit it at the end of the URL and there is the flag!
+
 <img src="../assets/img/ctf-2025-web-exploration/where_are_the_robots/2.png" width="600">  
 
 </details>
