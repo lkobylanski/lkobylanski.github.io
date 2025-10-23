@@ -65,15 +65,22 @@ A medium-level challenge involving the Burp Suite to manipulate the HTTPS reques
 
 🛠️ Steps to solve
 
-1. Open the link from the task: http://mercury.picoctf.net:21939/  
-<img src="../assets/img/ctf-2025-web-exploration/GET_A_HEAD/4.png" width="600">  
-2. The site changes color accordingly to the button we click. If we click blue option there is POST request, when red there is a GET  
-BLUE:  
-<img src="../assets/img/ctf-2025-web-exploration/GET_A_HEAD/5.png" width="600">  
+1. Open the link from the task: http://mercury.picoctf.net:21939/
+2. 
+<img src="../assets/img/ctf-2025-web-exploration/GET_A_HEAD/4.png" width="600">
+
+4. The site changes color accordingly to the button we click. If we click blue option there is POST request, when red there is a GET  
+BLUE:
+
+<img src="../assets/img/ctf-2025-web-exploration/GET_A_HEAD/5.png" width="600">
+
 RED:  
+
 <img src="../assets/img/ctf-2025-web-exploration/GET_A_HEAD/6.png" width="600">  
-3. As the title of the challenge is GET a HEAD - I assume the GET is the request we want to experiment with. I intercept GET request and switch GET for HEAD - as in the challenge title and send
-And there it is! The flag:  
+
+6. As the title of the challenge is GET a HEAD - I assume the GET is the request we want to experiment with. I intercept GET request and switch GET for HEAD - as in the challenge title and send
+And there it is! The flag:
+
 <img src="../assets/img/ctf-2025-web-exploration/GET_A_HEAD/3.png" width="600">
 
 </details>
@@ -85,18 +92,27 @@ Here we will have to use cookies to find the flag. I'll use Chrome add-on Cookie
 
 🛠️ Steps to solve
 
-1. I opened the page: http://mercury.picoctf.net:17781/ It looked like this:  
-<img src="../assets/img/Web Exploration/Cookies/1.png" width="600">  
+1. I opened the page: http://mercury.picoctf.net:17781/ It looked like this:
+
+<img src="../assets/img/ctf-2025-web-exploration/Cookies/1.png" width="600">  
+
 After opening page we could see only one cookie Named: name with Value: -1  
-3. First I opened Cookie-Editor add-on and tried to add earch for the cookie from the placeholder in the search bar: snickerdoodle - it was proper value, but wrong cookie. We got new cookie with value 0  
-4. Idea that popped in my head was: There is too many kind of cookies to tre guessing it :D. Let's try from a different angle.  
+
+3. First I opened Cookie-Editor add-on and tried to add earch for the cookie from the placeholder in the search bar: snickerdoodle - it was proper value, but wrong cookie. We got new cookie with value 0
+  
+5. Idea that popped in my head was: There is too many kind of cookies to tre guessing it :D. Let's try from a different angle.
+
 <img src="../assets/img/Web Exploration/Cookies/3.png" width="600">  
-5. I use Cookie-Editor to change the cookie value from 0, to 1 save it and reload the page and we got next cookie name but still wrong  
-6. Then I trieds 50, 40, 30 - nothing. Tried 20 and it works but wrong cookie (at this point I hoped the last one will be the flag) so I tried 29 - nothing, then 28 - cookie, but again, not very special... :)  
-7. Finally I found the right one!  
+
+7. I use Cookie-Editor to change the cookie value from 0, to 1 save it and reload the page and we got next cookie name but still wrong
+  
+9. Then I trieds 50, 40, 30 - nothing. Tried 20 and it works but wrong cookie (at this point I hoped the last one will be the flag) so I tried 29 - nothing, then 28 - cookie, but again, not very special... :)  
+
+11. Finally I found the right one!
+
 <img src="../assets/img/Web Exploration/Cookies/4.png" width="600">  
 
-I'll add automated solution with Burp Suite intruder or another script soon, because it seems very so i'll leave place here for it! :D
+I'll add automated solution with Burp Suite intruder or another script soon, because it seems very so I'll leave place here for it! :D
 
 </details>
 <details> <summary><b>5) Scavenger Hunt (medium)</b></summary>
@@ -107,17 +123,28 @@ We will search throrugh the page, to find parts of the flag.
 
 🛠️ What I did
 
-1. First ofcourse I open the page: http://mercury.picoctf.net:5080/  
-2. And start classic from DevTools and DOM analyzing and immediately we can see first part of the flag  
-<img src="..assets/img/Web Exploration/Scavenger Hunt/2.png" width="600">  
-3. Then I go to sources and and CSS and here is the 2nd part... however we don't know how many parts there is, I don't think it will be only 3 :D  
-<img src="..assets/img/Web Exploration/Scavenger Hunt/3.png" width="600">  
-4. Let's go see the js file. Here we have hint <i>How can I keep Google from indexing my website?</i> instead of the flag part:
-5. The idea that comes to my mind is to check as in previous challenge - robots.txt - so I add it to the URL and there it is 3rd part with another hint
-<img src="..assets/img/Web Exploration/Scavenger Hunt/1.png" width="600">  
-6. Here I stucked for a moment, had no really idea where to search only hint was that its apache. After about ~1hr of tries and doing some resarch I found that: .htaccess is a configuration file used by Apache-based web servers and it worked - I replaced /robots.txt at the end of the URL with /.htaccess and I found it 4th part of the flag with another hint  
-<img src="..assets/img/Web Exploration/Scavenger Hunt/1.png" width="600">
-7. And another resarch, after some time I found that DS_Store is a file that stores custom attributes of its containing folder, such as folder view options, icon positions - It took me a while to find out, but there is final part!
-<img src="..assets/img/Web Exploration/Scavenger Hunt/7.png" width="600">
+1. First ofcourse I open the page: http://mercury.picoctf.net:5080/
+
+3. And start classic from DevTools and DOM analyzing and immediately we can see first part of the flag
+
+<img src="../assets/img/ctf-2025-web-exploration/Scavenger_Hunt/2.png" width="600">  
+
+4. Then I go to sources and and CSS and here is the 2nd part... however we don't know how many parts there is, I don't think it will be only 3 :D
+
+<img src="../assets/img/ctf-2025-web-exploration/Scavenger_Hunt/3.png" width="600">  
+
+5. Let's go see the js file. Here we have hint <i>How can I keep Google from indexing my website?</i> instead of the flag part.
+  
+6. The idea that comes to my mind is to check as in previous challenge - robots.txt - so I add it to the URL and there it is 3rd part with another hint
+
+<img src="../assets/img/ctf-2025-web-exploration/Scavenger_Hunt/1.png" width="600">
+
+7. Here I stucked for a moment, had no really idea where to search only hint was that its apache. After about ~1hr of tries and doing some resarch I found that: .htaccess is a configuration file used by Apache-based web servers and it worked - I replaced /robots.txt at the end of the URL with /.htaccess and I found it 4th part of the flag with another hint
+   
+<img src="../assets/img/ctf-2025-web-exploration/Scavenger_Hunt/1.png" width="600">  
+
+9. And another resarch, after some time I found that DS_Store is a file that stores custom attributes of its containing folder, such as folder view options, icon positions - It took me a while to find out, but there is final part!
+
+<img src="../assets/img/ctf-2025-web-exploration/Scavenger_Hunt/7.png" width="600">  
 
 </details>
