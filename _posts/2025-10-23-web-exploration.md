@@ -21,16 +21,16 @@ First task from Web Exploration field. Here we will have to use DevTools to insp
 🛠️ What I did
 
 Opened the page: http://jupiter.challenges.picoctf.org:9670
-The page looks like this:
-<img src="../assets/img/ctf-2025-web-exploration/insp3ct0r/5.png" width="600"> 
-And I click on the HOW tab. Here we can see that to make this site creator used a HTML, CSS and JS.
-<img src="../assets/img/ctf-2025-web-exploration/insp3ct0r/6.png" width="600"> 
+The page looks like this:  
+<img src="../assets/img/ctf-2025-web-exploration/insp3ct0r/5.png" width="600">  
+And I click on the HOW tab. Here we can see that to make this site creator used a HTML, CSS and JS.  
+<img src="../assets/img/ctf-2025-web-exploration/insp3ct0r/6.png" width="600">  
 
 1. I open DevTool (F12) and start inspecting DOM. Almost immediately I found 1st part of the flag in the HTML file:  
 "<img src="../assets/img/ctf-2025-web-exploration/insp3ct0r/1.png" width="600"> " width="600">  
 2. Then I move to sources and check mycss.css where I found 2nd part of the flag  
-<img src="../assets/img/Web Exploration/insp3ct0r/2.png" width="600"> 
-3. And then move to myjs.js where the last part of the flag is waiting. 
+<img src="../assets/img/Web Exploration/insp3ct0r/2.png" width="600">  
+3. And then move to myjs.js where the last part of the flag is waiting.  
 <img src="../assets/img/ctf-2025-web-exploration/insp3ct0r/3.png" width="600">  
 
 </details>
