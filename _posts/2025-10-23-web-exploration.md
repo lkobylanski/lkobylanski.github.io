@@ -30,11 +30,11 @@ And I click on the HOW tab. Here we can see that to make this site creator used 
    
 <img src="../assets/img/ctf-2025-web-exploration/insp3ct0r/1.png" width="600" width="600">
 
-3. Then I move to sources and check mycss.css where I found 2nd part of the flag
+2. Then I move to sources and check mycss.css where I found 2nd part of the flag  
    
 <img src="../assets/img/ctf-2025-web-exploration/insp3ct0r/2.png" width="600">  
 
-5. And then move to myjs.js where the last part of the flag is waiting.  
+3. And then move to myjs.js where the last part of the flag is waiting.  
 
 <img src="../assets/img/ctf-2025-web-exploration/insp3ct0r/3.png" width="600">  
 
