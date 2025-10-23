@@ -66,22 +66,23 @@ A medium-level challenge involving the Burp Suite to manipulate the HTTPS reques
 🛠️ Steps to solve
 
 1. Open the link from the task: http://mercury.picoctf.net:21939/
-2. 
-<img src="../assets/img/ctf-2025-web-exploration/GET_A_HEAD/4.png" width="600">
 
-4. The site changes color accordingly to the button we click. If we click blue option there is POST request, when red there is a GET  
-BLUE:
+<img src="../assets/img/ctf-2025-web-exploration/GET_A_HEAD/4.png" width="600">  
 
-<img src="../assets/img/ctf-2025-web-exploration/GET_A_HEAD/5.png" width="600">
+2. The site changes color accordingly to the button we click. If we click blue option there is POST request, when red there is a GET  
+
+BLUE:  
+
+<img src="../assets/img/ctf-2025-web-exploration/GET_A_HEAD/5.png" width="600">  
 
 RED:  
 
 <img src="../assets/img/ctf-2025-web-exploration/GET_A_HEAD/6.png" width="600">  
 
 6. As the title of the challenge is GET a HEAD - I assume the GET is the request we want to experiment with. I intercept GET request and switch GET for HEAD - as in the challenge title and send
-And there it is! The flag:
+And there it is! The flag:  
 
-<img src="../assets/img/ctf-2025-web-exploration/GET_A_HEAD/3.png" width="600">
+<img src="../assets/img/ctf-2025-web-exploration/GET_A_HEAD/3.png" width="600">  
 
 </details>
 <details> <summary><b>4) Cookies (medium)</b></summary>
