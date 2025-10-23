@@ -27,7 +27,7 @@ And I click on the HOW tab. Here we can see that to make this site creator used 
 <img src="../assets/img/ctf-2025-web-exploration/insp3ct0r/6.png" width="600">  
 
 1. I open DevTool (F12) and start inspecting DOM. Almost immediately I found 1st part of the flag in the HTML file:  
-<img src="../assets/img/ctf-2025-web-exploration/insp3ct0r/1.png" width="600"> " width="600">  
+<img src="../assets/img/ctf-2025-web-exploration/insp3ct0r/1.png" width="600" width="600">  
 2. Then I move to sources and check mycss.css where I found 2nd part of the flag  
 <img src="../assets/img/ctf-2025-web-exploration/insp3ct0r/2.png" width="600">  
 3. And then move to myjs.js where the last part of the flag is waiting.  
