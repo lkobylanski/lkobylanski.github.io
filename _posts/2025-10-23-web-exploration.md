@@ -103,11 +103,11 @@ After opening page we could see only one cookie Named: name with Value: -1
   
 5. Idea that popped in my head was: There is too many kind of cookies to tre guessing it :D. Let's try from a different angle.
 
-<img src="../assets/img/ctf-2025-web-exploration/3.png" width="600">  
+<img src="../assets/img/ctf-2025-web-exploration/Cookies/3.png" width="600">  
 
 7. I use Cookie-Editor to change the cookie value from 0, to 1 save it and reload the page and we got next cookie name but still wrong
   
-9. Then I trieds 50, 40, 30 - nothing. Tried 20 and it works but wrong cookie (at this point I hoped the last one will be the flag) so I tried 29 - nothing, then 28 - cookie, but again, not very special... :)  
+9. Then I tried 50, 40, 30 - nothing. Tried 20 and it works but wrong cookie (at this point I hoped the last one will be the flag) so I tried 29 - nothing, then 28 - cookie, but again, not very special... :)  
 
 11. Finally I found the right one!
 
