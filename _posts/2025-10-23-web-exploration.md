@@ -82,15 +82,15 @@ Here we will have to use cookies to find the flag. I'll use Chrome add-on Cookie
 🛠️ Steps to solve
 
 1. I opened the page: http://mercury.picoctf.net:17781/ It looked like this:  
-<img src="../assets/img/Web Exploration/Cookies/1.png" width="600">
-After opening page we could see only one cookie Named: name with Value: -1
-3. First I opened Cookie-Editor add-on and tried to add earch for the cookie from the placeholder in the search bar: snickerdoodle - it was proper value, but wrong cookie. We got new cookie with value 0
-4. Idea that popped in my head was: There is too many kind of cookies to tre guessing it :D. Let's try from a different angle.
-<img src="../assets/img/Web Exploration/Cookies/3.png" width="600">
-5. I use Cookie-Editor to change the cookie value from 0, to 1 save it and reload the page and we got next cookie name but still wrong
-6. Then I trieds 50, 40, 30 - nothing. Tried 20 and it works but wrong cookie (at this point I hoped the last one will be the flag) so I tried 29 - nothing, then 28 - cookie, but again, not very special... :)
-7. Finally I found the right one!
-<img src="../assets/img/Web Exploration/Cookies/4.png" width="600">
+<img src="../assets/img/Web Exploration/Cookies/1.png" width="600">  
+After opening page we could see only one cookie Named: name with Value: -1  
+3. First I opened Cookie-Editor add-on and tried to add earch for the cookie from the placeholder in the search bar: snickerdoodle - it was proper value, but wrong cookie. We got new cookie with value 0  
+4. Idea that popped in my head was: There is too many kind of cookies to tre guessing it :D. Let's try from a different angle.  
+<img src="../assets/img/Web Exploration/Cookies/3.png" width="600">  
+5. I use Cookie-Editor to change the cookie value from 0, to 1 save it and reload the page and we got next cookie name but still wrong  
+6. Then I trieds 50, 40, 30 - nothing. Tried 20 and it works but wrong cookie (at this point I hoped the last one will be the flag) so I tried 29 - nothing, then 28 - cookie, but again, not very special... :)  
+7. Finally I found the right one!  
+<img src="../assets/img/Web Exploration/Cookies/4.png" width="600">  
 
 I'll add automated solution with Burp Suite intruder or another script soon, because it seems very so i'll leave place here for it! :D
 
