@@ -21,8 +21,8 @@ First task from Web Exploration field. Here we will have to use DevTools to insp
 🛠️ What I did
 
 Opened the page: http://jupiter.challenges.picoctf.org:9670
-And I was on the page:
-<img src="...assets/img/Web Exploration/insp3ct0r/5.png" width="600"> 
+The page looks like this:
+<img src="..assets/img/ctf-2025-web-exploration/insp3ct0r/5.png" width="600"> 
 And I click on the HOW tab. Here we can see that to make this site creator used a HTML, CSS and JS.
 <img src="..assets/img/Web Exploration/insp3ct0r/6.png" width="600"> 
 
