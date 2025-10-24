@@ -117,7 +117,7 @@ I'll add automated solution with Burp Suite intruder or another script soon, bec
 
 </details>
 <details> <summary><b>5) Scavenger Hunt (medium)</b></summary>
-Cookies — (medium)
+Scavenger Hunt — (medium)
 🔍 Description
 There is some interesting information hidden around this site.
 We will search throrugh the page, to find parts of the flag.
